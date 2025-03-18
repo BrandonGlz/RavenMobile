@@ -1,0 +1,23 @@
+
+
+  .img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* espacio entre la imagen y las letras */
+  }
+
+.button a {
+    display: inline-block;
+    margin: 10px;           /* espacio entre los 2 botones */
+    padding: 10px 20px; /* espacio interno de los botones */
+    font-weight: 800;
+}
+
+.slogan {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    text-align: center; 
+}

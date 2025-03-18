@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap'); /*Es la fuente que usamos  */
+
+/* Variables definidas */
+:root {
+    /* Colores*/
+    --color-primary: #880000; /* Guinda */
+    --color-white: #FFFFFF; /* Blanco */
+    --color-text-dark: #606060; /* Gris oscuro (para texto en fondo blanco) */
+    --color-text-light: #F0F0F0; /* Gris claro (para texto en fondo guinda) */
+
+    /* la uente para el texto */
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-base: 16px;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+
+    /* Tamaños definidos para las cosas */
+    --button-width: 325px;
+    --button-height: 50px;
+    --icon-size: 20px;
+    --title-size: 40px;
+    --paragraph-size: 25px;
+}
+
+/* Estilos repetidos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: var(--title-size);
+    font-weight: var(--font-weight-semibold);
+    margin: 10px;
+    text-align: center;
+    color: var(--color-text-dark);
+}
+
+.button a{
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+
+p {
+    font-size: var(--paragraph-size);
+    font-weight: var(--font-weight-regular);
+    margin: 10px;
+    text-align: center;
+    color: var(--color-text-dark);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 100%; 
+    max-width: 300px; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;  
+    width: 100%;  
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación */
+/* TabBar.css */
+:root {
+    --color-white: #ffffff;
+    --color-primary: #880000;
+  }
+  
+  .navigation-tab {
+    height: 80px; 
+    width: 100%; 
+    max-width: 340px; 
+    background-color: var(--color-white);
+    box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0 0; 
+    overflow: hidden;
+    border: 8px solid var(--color-white); 
+    display: flex;
+    position: fixed;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 1000;
+    flex-shrink: 0;
+  }
+  
+  .navigation-tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%; 
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    z-index: 2;
+    padding: 10px 0;
+  }
+  
+  .navigation-tab-item.active {
+    width: 30%; 
+    background-color: #ffd6d6; /* Color de fondo cuando está seleccionado */
+  }
+  
+  .navigation-tab-item.active .navigation-tab__icon {
+    width: 20px; 
+    height: 20px;
+    margin-bottom: 4px; 
+  }
+  
+  .navigation-tab-item.active .navigation-tab__txt {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  
+  .navigation-tab-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  .navigation-tab__icon {
+    display: block;
+    color: var(--color-primary);
+    transition-duration: 0.2s;
+    line-height: 1;
+    width: 28px;
+    height: 28px;
+    margin: auto; 
+  }
+  
+  .navigation-tab__txt {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-primary);
+    opacity: 0; 
+    transition-duration: 0.2s;
+    transform: translateY(10px); 
+    user-select: none;
+    text-align: center; 
+  }
+
+  /* boton de prueba para poner horario en modulo de driver*/
+
+  .add-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .add-button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+  }
